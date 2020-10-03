@@ -51,7 +51,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\zChallengeThree_Repository\KomodoBadges_Repository.csproj">
+    <ProjectReference Include="..\ChallengeThree_Repository\KomodoBadges_Repository.csproj">
       <Project>{e479f92c-d24a-4185-8d5e-47889fb1f034}</Project>
       <Name>KomodoBadges_Repository</Name>
     </ProjectReference>

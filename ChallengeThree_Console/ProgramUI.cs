@@ -65,14 +65,15 @@ namespace KomodoBadge_Console
             Dictionary<int, Badge> listOfBadges = _badgeRepo.GetBadgeDictionary();
 
             Console.WriteLine("Badge #                Door Access");
-
-            foreach (KeyValuePair<int, Badge> badge in listOfBadges) 
+            Console.WriteLine(doorDictionary[12345]);
+            Console.WriteLine(doorDictionary[22345]);
+            Console.WriteLine(doorDictionary[32345]);
+            //foreach (KeyValuePair<int, Badge> badge in listOfBadges) 
             {
-                Console.WriteLine("{0, -20}", badge.Key);
                // for (int i = 0; i < badge.Value.DoorName.Count; i++)
                //Door name needs to be a list for this to work
                 {
-
+                    
                 }
                 
             }
