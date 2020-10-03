@@ -122,11 +122,11 @@ namespace ChallengeOne_Console
         {
             Console.Clear(); 
             Console.WriteLine("Enter the ID to find the ingredients: ");
-            string itemId = Console.ReadLine();
+            int itemId = Convert.ToInt32(Console.ReadLine());
 
             MenuItem menuItem = _menuRepo.GetMenuItemsByNumber(itemId);
 
-            if (itemId != null)
+            if (itemId == menuItem.ItemID)
             {
                 Console.WriteLine($"ID: {menuItem.ItemID}\n" +
                     $"Name: {menuItem.ItemName}\n" +
@@ -162,8 +162,11 @@ namespace ChallengeOne_Console
         private void SeedItemsToList()
         {
             MenuItem iceLatte = new MenuItem(1, "Iced Latte", "This is a latte with ice.", "Coffee, Ice, Milk", 5.99);
-
+            MenuItem iceLatte1 = new MenuItem(2, "Iced Latte", "This is a latte with ice.", "Coffee, Ice, Milk", 5.99);
+            MenuItem iceLatte2 = new MenuItem(3, "Iced Latte", "This is a latte with ice.", "Coffee, Ice, Milk", 5.99);
             _menuRepo.AddMenuItems(iceLatte);
+            _menuRepo.AddMenuItems(iceLatte1);
+            _menuRepo.AddMenuItems(iceLatte2);
         }
     }
 }

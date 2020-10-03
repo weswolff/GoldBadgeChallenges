@@ -1,7 +1,9 @@
 ﻿using ChallengeTwo_Repository;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,7 +15,7 @@ namespace ChallengeTwo_Console
 
         public void Run()
         {
-            SeedClaimsToList();
+            SeedClaimsToQueue();
             Menu();
         }
 
@@ -33,15 +35,13 @@ namespace ChallengeTwo_Console
                 switch (userInput)
                 {
                     case "1":
-                        //view all claims
-                        
+                        ShowAllClaims();
                         break;
                     case "2":
-                        //Take care of next claim
-                       
+                        NextClaimInQ();
                         break;
                     case "3":
-                        //Create a new claim
+                        CreateNewClaim();
                         break;
                     case "4":
                         keepRunning = false;
@@ -58,6 +58,56 @@ namespace ChallengeTwo_Console
             }
         }
 
+        public void ShowAllClaims()
+        {
+            Console.Clear();
+            Queue<Claims> claimsQ = _claimRepo.GetClaims(); //This is not displaying properly, need to figure out how to
+            foreach (Claims claim in claimsQ)
+            {
+                Console.WriteLine($"ClaimID: {claim.ClaimId}\n" +
+                        $"Type: {claim.ClaimType}\n" +
+                        $"Description: {claim.Description}\n" +
+                        $"Amount: {claim.ClaimAmount}\n" +
+                        $"DateOfIncident: {claim.DateOfIncident}\n" +
+                        $"DateOfClaim: {claim.DateOfClaim}\n" +
+                        $"IsValid: {claim.IsValid}\n");
+            }                              
+        }
+        public void DisplayClaim(Claims claims)
+        {
+            Queue<Claims> claimsQ = _claimRepo.GetClaims();
+            
+            
+        }
+
+        //This method will display the claim at the top of the queue with more detail
+        public void NextClaimInQ()
+        {
+            bool workingOnClaims = true;
+            while (workingOnClaims)
+            {
+                Claims claim = _claimRepo.NextClaim();
+                Console.WriteLine($"ClaimID: {claim.ClaimId}\n" +
+                            $"Type: {claim.ClaimType}\n" +
+                            $"Description: {claim.Description}\n" +
+                            $"Amount: {claim.ClaimAmount}\n" +
+                            $"DateOfIncident: {claim.DateOfIncident}\n" +
+                            $"DateOfClaim: {claim.DateOfClaim}\n" +
+                            $"IsValid: {claim.IsValid}\n");
+                Console.WriteLine("Do you want to deal with this claim now(y/n)? ");
+                string userInput = Console.ReadLine();
+                if (userInput == "y")
+                {
+                    _claimRepo.DeleteClaims();
+                }
+                else
+                {
+                    workingOnClaims = false;
+                }
+            }
+
+
+        }
         //Create a new claim
         private void CreateNewClaim()
         {
@@ -65,7 +115,7 @@ namespace ChallengeTwo_Console
 
             //Claim ID
             Console.WriteLine("Enter the Claim ID: ");
-            //Conver ID to string
+            //Convert ID to string
             string claimIdString = Console.ReadLine();
             newClaim.ClaimId = int.Parse(claimIdString);
 
@@ -98,13 +148,13 @@ namespace ChallengeTwo_Console
             //Validate if claim is valid or not
             if ((newClaim.DateOfClaim - newClaim.DateOfIncident).TotalDays < 30)
             {
-                bool isValid = true;
+                Console.WriteLine("This claim is valid.");
             }
             else
             {
-                bool isValid = false;
+                Console.WriteLine("This claim is not valid.");
             }
-
+            _claimRepo.AddClaims(newClaim);
         }
 
         private DateTime GetDateTime() //This method gets the date from the user to be used for accident and claim dates
@@ -118,7 +168,31 @@ namespace ChallengeTwo_Console
             Console.WriteLine("Year: ");
             var year = Convert.ToInt32(Console.ReadLine());
 
-            return new DateTime(month, day, year);
+            return new DateTime(day, month, year);
+        }
+
+        
+        public void SeedClaimsToQueue()
+        {
+            DateTime dateOfCarCrash = new DateTime(2018 , 04, 25);
+            DateTime dateOfCarClaim = new DateTime(2018 , 04, 12);
+
+            DateTime dateOfHouseFire = new DateTime(2018, 04, 11);
+            DateTime dateOfHouseClaim = new DateTime(2018, 04, 12);
+
+            DateTime dateOfTheft = new DateTime(2018, 04, 27);
+            DateTime dateOfTheftClaim = new DateTime(2018, 06, 01);
+
+            Claims carClaim = new Claims(1, TypeOfClaim.Car , "Car accident on 465.", 400.00, dateOfCarCrash, dateOfCarClaim, true);
+            Claims houseClaim = new Claims(2, TypeOfClaim.Home, "House fire in kitchen.", 4000.00, dateOfHouseFire, dateOfHouseClaim, true);
+            Claims theftClaim = new Claims(3, TypeOfClaim.Theft, "Stolen pancakes.", 4.00, dateOfTheft, dateOfTheftClaim, false);
+            //Get your list from the repo
+            _claimRepo.AddClaims(carClaim);
+            _claimRepo.AddClaims(houseClaim);
+            _claimRepo.AddClaims(theftClaim);
+            
+            
+            
         }
     }
 }

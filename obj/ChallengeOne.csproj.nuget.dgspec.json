@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ElevenFiftyProjects\\DotNetProjects\\ChallengeOne\\ChallengeOne.csproj": {}
+    "C:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallenges\\ChallengeOne.csproj": {}
   },
   "projects": {
-    "C:\\ElevenFiftyProjects\\DotNetProjects\\ChallengeOne\\ChallengeOne.csproj": {
+    "C:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallenges\\ChallengeOne.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ElevenFiftyProjects\\DotNetProjects\\ChallengeOne\\ChallengeOne.csproj",
+        "projectUniqueName": "C:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallenges\\ChallengeOne.csproj",
         "projectName": "ChallengeOne",
-        "projectPath": "C:\\ElevenFiftyProjects\\DotNetProjects\\ChallengeOne\\ChallengeOne.csproj",
+        "projectPath": "C:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallenges\\ChallengeOne.csproj",
         "packagesPath": "C:\\Users\\wescw\\.nuget\\packages\\",
-        "outputPath": "C:\\ElevenFiftyProjects\\DotNetProjects\\ChallengeOne\\obj\\",
+        "outputPath": "C:\\ElevenFiftyProjects\\DotNetProjects\\GoldBadgeChallenges\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wescw\\AppData\\Roaming\\NuGet\\NuGet.Config",

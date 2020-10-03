@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B3759A3D-B5C8-4D1E-B12A-0417651FED1C}</ProjectGuid>
+    <ProjectGuid>{53EDC2C0-51E3-40B5-B909-F9D488644DA7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ChallengeTwo_Console</RootNamespace>
-    <AssemblyName>ChallengeTwo_Console</AssemblyName>
+    <RootNamespace>ChallengeOneRedo_Console</RootNamespace>
+    <AssemblyName>ChallengeOneRedo_Console</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,12 +49,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ChallengeTwo_Repository\ChallengeTwo_Repository.csproj">
-      <Project>{3d59fb95-ad9e-435d-a906-651222adb0cc}</Project>
-      <Name>ChallengeTwo_Repository</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

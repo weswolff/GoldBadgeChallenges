@@ -4,3 +4,9 @@ C:\ElevenFiftyProjects\DotNetProjects\ChallengeOne_Repository\obj\Debug\Challeng
 C:\ElevenFiftyProjects\DotNetProjects\ChallengeOne_Repository\obj\Debug\ChallengeOne_Repository.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\DotNetProjects\ChallengeOne_Repository\obj\Debug\ChallengeOne_Repository.dll
 C:\ElevenFiftyProjects\DotNetProjects\ChallengeOne_Repository\obj\Debug\ChallengeOne_Repository.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Repository\bin\Debug\ChallengeOne_Repository.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Repository\bin\Debug\ChallengeOne_Repository.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Repository\obj\Debug\ChallengeOne_Repository.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Repository\obj\Debug\ChallengeOne_Repository.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Repository\obj\Debug\ChallengeOne_Repository.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Repository\obj\Debug\ChallengeOne_Repository.pdb

@@ -1,0 +1,7 @@
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\zChallengeThree_Console\bin\Debug\zChallengeThree_Console.exe.config
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\zChallengeThree_Console\bin\Debug\zChallengeThree_Console.exe
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\zChallengeThree_Console\bin\Debug\zChallengeThree_Console.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\zChallengeThree_Console\obj\Debug\zChallengeThree_Console.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\zChallengeThree_Console\obj\Debug\zChallengeThree_Console.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\zChallengeThree_Console\obj\Debug\zChallengeThree_Console.exe
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\zChallengeThree_Console\obj\Debug\zChallengeThree_Console.pdb

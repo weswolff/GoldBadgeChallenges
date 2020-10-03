@@ -43,7 +43,7 @@ namespace ChallengeOne_Repository
         }
 
         //Helper Method that searches for menu items
-        private MenuItem GetMenuItemsByNumber(int menuNumber)
+        public MenuItem GetMenuItemsByNumber(int menuNumber)
         {
             foreach (MenuItem menuItem in _listOfMenuItems)
             {
