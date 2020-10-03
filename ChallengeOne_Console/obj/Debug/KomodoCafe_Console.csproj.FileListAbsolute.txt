@@ -1,0 +1,10 @@
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Console\bin\Debug\ChallengeOne_Console.exe.config
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Console\bin\Debug\ChallengeOne_Console.exe
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Console\bin\Debug\ChallengeOne_Console.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Console\bin\Debug\ChallengeOne_Repository.dll
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Console\bin\Debug\ChallengeOne_Repository.pdb
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Console\obj\Debug\KomodoCafe_Console.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Console\obj\Debug\KomodoCafe_Console.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Console\obj\Debug\KomodoCafe_Console.csproj.CopyComplete
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Console\obj\Debug\ChallengeOne_Console.exe
+C:\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\ChallengeOne_Console\obj\Debug\ChallengeOne_Console.pdb

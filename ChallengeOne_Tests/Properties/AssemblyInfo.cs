@@ -2,18 +2,18 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("ChallengeOne_Tests")]
+[assembly: AssemblyTitle("ChallengeOneRedo_Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ChallengeOne_Tests")]
+[assembly: AssemblyProduct("ChallengeOneRedo_Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
 
-[assembly: Guid("0b6cbc11-32e2-4ae4-8a60-ec6d2d91fe10")]
+[assembly: Guid("a6b9faf9-0c7a-4a24-8195-bbf607838aa3")]
 
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
